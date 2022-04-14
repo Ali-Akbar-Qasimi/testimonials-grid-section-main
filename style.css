@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+span {
+  color: #cfcfcf;
+  font-size: 13px;
+}
+
+h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 15px;
+  margin: 50px 0;
+}
+
+.container .daniel {
+  background-color: #7541c8;
+}
+
+.container .daniel p {
+  color: #cfcfcf;
+  font-size: 13px;
+}
+
+.container .jonathan {
+  background-color: #48556a;
+}
+
+.container .jonathan p {
+  color: #cfcfcf;
+}
+
+.container .kira {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background-color: white;
+}
+
+.container .kira h2 {
+  color: #48556a;
+}
+
+.container .kira p {
+  color: #cfcfcf;
+}
+
+.container .kira .profile p {
+  color: #48556a;
+}
+
+.container .jean {
+  background-color: white;
+}
+
+.container .jean h2 {
+  color: #19212e;
+  font-size: 23px;
+}
+
+.container .jean p {
+  color: #cfcfcf;
+}
+
+.container .patrick {
+  background-color: #19212e;
+}
+
+.container .patrick p {
+  color: #cfcfcf;
+}
+
+.container .card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.container .card .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .profile img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'card1 card1 card2 card3' 'card4 card5 card5 card3';
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 30px;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+  }
+  .container .card {
+    height: 300px;
+  }
+  .container .daniel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: card1;
+    width: 500px;
+  }
+  .container .jonathon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: card2;
+  }
+  .container .kira {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: card3;
+    height: 100%;
+  }
+  .container .jean {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: card4;
+  }
+  .container .patrick {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: card5;
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
